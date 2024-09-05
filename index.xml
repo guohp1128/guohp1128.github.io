@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://example.org/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Sep 2024 22:56:21 +0800</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo创建blog</title>
+      <link>https://example.org/posts/hugo/</link>
+      <pubDate>Wed, 04 Sep 2024 22:56:21 +0800</pubDate>
+      <guid>https://example.org/posts/hugo/</guid>
+      <description>1&#x9;hugo安装 Hugo有两种版本：标准版和扩展版。这里使用扩展版。&#xA;hugo有二进制安装和源码安装两种方法，这里使用二进制安装。&#xA;从Releases · gohugoio/hugo (github.com)下载最新二进制文件，选择windows 64位系统的扩展版本。&#xA;解压二进制安装文件，并拷贝可执行文件到目标目录D:\hugo\bin。&#xA;将目录D:\hugo\bin添加到PATH环境变量中。&#xA;打开windows命令行，查看 Hugo 的版本，以判断是否安装成功，命令代码如下：&#xA;hugo version 如果出现如图所示hugo版本号，说明安装成功。&#xA;2&#x9;git安装 请参考git安装介绍。&#xA;3&#x9;创建新的站点 在本地目录D:\hugo创建一个新的站点。进入D:\hugo目录，点击右键选择打开GIt Bash窗口。后面所有操作命令都在GIt Bash窗口输入。&#xA;创建一个名为的新站点，命令代码如下：&#xA;hugo new site blog 此时D:\hugo目录下生成了名为blog的站点目录。&#xA;4&#x9;站点添加主题 进入站点目录，代码如下：&#xA;cd blog 在当前目录初始化为一个空的 Git仓库，代码如下：&#xA;git init 将 Ananke 主题作为 Git子模块 添加到 themes 目录中，代码如下：&#xA;git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke 向站点配置文件hugo.toml中追加一行，指示当前使用的主题。可手动添加，也可使用代码，代码如下：&#xA;echo &amp;#34;theme = &amp;#39;ananke&amp;#39;&amp;#34; &amp;gt;&amp;gt; hugo.toml 5&#x9;启动开发服务器查看站点 Hugo提供一个开发服务器，以在开发布局或创建内容时查看站点。开发服务器会将站点构建到内存中，并使用一个最小的HTTP服务器提供本地站点页面。浏览本地站点的URL为 http://localhost:1313/&#xA;在服务器运行时，它会监视项目目录中的资产、配置文件、内容、数据、布局、翻译和静态文件的更改。当它检测到更改时，服务器会重新构建你的站点并使用 LiveReload 刷新浏览器。&#xA;启动开发服务器，代码如下：&#xA;hugo server 如果想停止 Hugo 的开发服务器，在Git Bash窗口中按压 Ctrl + C。</description>
+    </item>
+    <item>
+      <title>hugo搭建</title>
+      <link>https://example.org/posts/first/</link>
+      <pubDate>Fri, 30 Aug 2024 22:56:21 +0800</pubDate>
+      <guid>https://example.org/posts/first/</guid>
+      <description>一，hugo博客搭建&#xA;1，安装和配置git&#xA;2，安装hugo和添加环境变量&#xA;3，查看hugo版本&#xA;4，git进入hugo目录&#xA;5，创建新的hugo网址&#xA;​&#x9;hugo new site blog&#xA;6，git进入blog目录&#xA;7，下载theme&#xA;​&#x9;git clone https://github.com/guohp1128/gohugo-theme-ananke.git themes/ananke&#xA;8，配置主题名称&#xA;​&#x9;theme=‘ananke’&#xA;9，启动博客在本地查看博客内容&#xA;​&#x9;hugo server&#xA;10，部署在github上，用 hugo 生成网页，托管到 GitHub 仓库&#xA;​&#x9;hugo –theme=ananke –baseURL=“https://guohp1128.github.io/&amp;quot;&#xA;11，将 blog/public 目录 push 到刚创建仓库的 master 分支&#xA;cd public git init git add . git commit -m “message” git remote add origin https://github.com/guohp1128/guohp1128.github.io.git git push -u origin master&#xA;二，github clone太慢失败怎么办&#xA;1，fork到自己的github仓库，然后同步到gitee仓库</description>
+    </item>
+    <item>
+      <title>My First Post</title>
+      <link>https://example.org/posts/my-first-post/</link>
+      <pubDate>Fri, 30 Aug 2024 22:56:21 +0800</pubDate>
+      <guid>https://example.org/posts/my-first-post/</guid>
+      <description>1&#x9;个人博客 我的第一篇文章。&#xA;为什么网站里的内容没有格式？</description>
+    </item>
+  </channel>
+</rss>
