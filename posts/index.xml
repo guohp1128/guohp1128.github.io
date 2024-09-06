@@ -27,7 +27,7 @@
       <link>https://example.org/posts/my-first-post/</link>
       <pubDate>Fri, 30 Aug 2024 22:56:21 +0800</pubDate>
       <guid>https://example.org/posts/my-first-post/</guid>
-      <description>1&#x9;个人博客 我的第一篇文章。&#xA;为什么网站里的内容没有格式？</description>
+      <description>1&#x9;个人博客 我的第一篇文章。&#xA;这是由hugo搭建的blog。blog项目名称为guohp1128，托管在gitee平台。用git子模块的形式管理主题、博客内容、静态网页。&#xA;主题为./themes/gohugo-theme-ananke，托管在github平台。博客内容为./content/posts，托管在gitee平台，静态网页为./public托管在github平台。</description>
     </item>
   </channel>
 </rss>
