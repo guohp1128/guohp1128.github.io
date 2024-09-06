@@ -102,7 +102,7 @@ echo &#34;theme = &#39;ananke&#39;&#34; &gt;&gt; hugo.toml 5	启动开发服务�
 hugo server 如果想停止 Hugo 的开发服务器，在Git Bash窗口中按压 Ctrl &#43; C。">
   <meta itemprop="datePublished" content="2024-09-04T22:56:21+08:00">
   <meta itemprop="dateModified" content="2024-09-04T22:56:21+08:00">
-  <meta itemprop="wordCount" content="76">
+  <meta itemprop="wordCount" content="91">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="hugo创建blog">
   <meta name="twitter:description" content="1	hugo安装 Hugo有两种版本：标准版和扩展版。这里使用扩展版。
@@ -235,6 +235,19 @@ hugo server 如果想停止 Hugo 的开发服务器，在Git Bash窗口中按压
 <pre tabindex="0"><code>hugo server
 </code></pre><p><img src="hugo.image/image-20240830093634726.png" alt="image-20240830093634726"></p>
 <p>如果想停止 Hugo 的开发服务器，在<code>Git Bash</code>窗口中按压 <code>Ctrl + C</code>。</p>
+<h1 id="6生成静态网站">6	生成静态网站</h1>
+<p>生成静态网站，静态网站内容保持在<code>public</code>文件夹中，代码如下：</p>
+<pre tabindex="0"><code>hugo
+</code></pre><h1 id="7发布站点">7	发布站点</h1>
+<p>可以使用一些免费的静态网站托管平台发布网站。这里使用<code>github</code>平台托管网站。在github平台创建一个your_name.github.io的仓库。将public文件夹初始化为git仓库并推送到名为your_name.github.io的远程仓库。到此，你可以通过https://your_name.github.io访问你的博客。</p>
+<h1 id="8更新blog流程">8	更新blog流程</h1>
+<ol>
+<li>在blog内容仓库<code>posts</code>中更改博客内容。</li>
+<li>在blog项目仓库<code>blog</code>中使用<code>hugo server</code>命令预览网站，使用<code>hugo</code>命令生成（更新）静态网站仓库<code>public</code>。</li>
+<li>提交<code>public</code>到远程仓库。</li>
+<li>提交<code>posts</code>到远程仓库。</li>
+<li>提交<code>blog</code>到远程仓库。</li>
+</ol>
 <ul class="pa0">
   
 </ul>
